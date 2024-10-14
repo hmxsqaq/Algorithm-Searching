@@ -1,18 +1,7 @@
-#include "sequential_search_symbol_table.h"
+#include "1_sequential_search_symbol_table.h"
+#include "2_binary_search_symbol_table.h"
 
 int main() {
-    SequentialSearchSymbolTable<std::string, int> table;
-    table.put("apple", 1);
-    table.put("banana", 2);
-    table.put("cherry", 3);
-
-    table.print();
-
-    if (table.contains("banana")) {
-        std::cout << "banana: " << *table.get("banana") << std::endl;
-    }
-
-    table.remove("banana");
-    table.print();
+    binary_search_symbol_table_test();
     return 0;
 }

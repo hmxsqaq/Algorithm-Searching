@@ -3,5 +3,8 @@ project(Algorithm_Searching)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Algorithm_Searching main.cpp
-        sequential_search_symbol_table.h)
+add_executable(Algorithm_Searching
+        main.cpp
+        comparable.h
+        1_sequential_search_symbol_table.h
+        2_binary_search_symbol_table.h)
