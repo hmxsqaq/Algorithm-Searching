@@ -1,4 +1,4 @@
-#include "sequential_search.h"
+#include "sequential_search_symbol_table.h"
 
 int main() {
     SequentialSearchSymbolTable<std::string, int> table;
