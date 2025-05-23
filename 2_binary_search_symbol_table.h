@@ -9,7 +9,7 @@
 template<Comparable KEY, typename VALUE>
 class BinarySearchSymbolTable {
 public:
-    void put(KEY key, VALUE value) {
+    void put(KEY key, const VALUE& value) {
         int i = rank(key);
         if (i < keys_.size() && keys_[i] == key) {
             values_[i] = value;
